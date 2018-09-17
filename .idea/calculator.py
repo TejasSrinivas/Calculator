@@ -14,7 +14,34 @@ root.configure(background='black')
 Display = Entry(root, font = ('arial', 30 , 'bold'),
                 fg='white', bg='black', justify='right',
                 bd=50)
-Display.grid(columnspan=5)
+Display.grid(columnspan=4)
 
+##==================================================================================
+##Row 1
+
+##Clear
+btnAC = Button(root, font = ('arial', 30, 'bold'),
+               padx = 30, pady = 15,
+               fg = 'white', justify = 'center',
+               bd = 8, text = 'C', bg='red').grid(row = 1, column = 0)
+
+##Modulus
+btnMod = Button(root, font = ('arial', 30, 'bold'),
+                padx = 30, pady = 15,
+                fg = 'black', justify = 'center',
+                bd = 8, text = '%', bg='orange').grid(row = 1, column = 1)
+
+##Division
+btnDiv = Button(root, font = ('arial', 30, 'bold'),
+                padx = 30, pady = 15,
+                fg = 'black', justify = 'center',
+                bd = 8, text = '/', bg='orange').grid(row = 1, column = 2)
+
+
+##Multiplication
+btnmul = Button(root, font = ('arial', 30, 'bold'),
+                padx = 30, pady = 15,
+                fg = 'black', justify = 'center',
+                bd = 8, text = '*', bg='orange').grid(row = 1, column = 3)
 
 root.mainloop()
