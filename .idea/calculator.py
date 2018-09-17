@@ -14,7 +14,7 @@ root.configure(background='black')
 Display = Entry(root, font = ('arial', 30 , 'bold'),
                 fg='white', bg='black', justify='right',
                 bd=50)
-Display.grid(columnspan=4)
+Display.grid(columnspan=5)
 
 
 root.mainloop()
